@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+:root{
+    --primary-color :#84CC16;
+    --secondary-color :#92400E;
+
+
+}
+
+body{
+    font-family: 'Shadows Into Light', cursive;
+     box-sizing: border-box;
+     margin: 0;
+     
+}
+.head{
+    background-color: var(--primary-color);
+    
+    padding: 0rem
+}
+.heading{
+    padding: 0.2rem;
+    text-align: center;
+    color:var(--secondary-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+main{
+    margin: auto;
+    padding: 1rem;
+    max-width: 700px;
+    
+}
+
+textarea{
+    box-sizing: border-box;
+    display: block;
+    width: 95%;
+    min-height: 18vh;
+    font-size: 1.5rem;
+    font-family:'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    border: 1px solid var(--secondary-color);
+
+}
+
+button{
+    background-color: var(--primary-color);
+    margin: 1rem 0rem;
+    padding:0.5rem 1rem;
+    font-family:'Shadows Into Light', cursive;
+    font-size: 2rem;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+
+
+}
+#output-txt{
+    font-size: 1.7rem;
+    
+}
+#output{
+    box-sizing: border-box;
+    width: 95%;
+    min-height: 15vh;
+    font-size: 1.7rem;
+    overflow: scroll;
+    border: 1px solid var(--secondary-color);
+}
+
+footer{
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    bottom:0;
+    position: fixed;
+    width: 100%;
+    
+}
+.foot-txt{
+    font-size: 1.7rem;
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+    
+}
