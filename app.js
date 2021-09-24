@@ -1,11 +1,11 @@
 var btnTranslate = document.querySelector("#btn-space");
-var inputTxt = document.querySelector("#txt-space");
-var outputTxt = document.querySelector("#output");
+var txtInput = document.querySelector("#txt-space");
+var outputDiv = document.querySelector("#output");
 
 var serverURL="https://api.funtranslations.com/translate/groot.json"
 
 function getTranslationURL(text){
-    return serverURL + "?" + "text" + text
+    return serverURL + "?" + "text=" + text
 }
 
 function errorHandler(error){
@@ -14,13 +14,13 @@ function errorHandler(error){
 }
 
 function clickHandler(){
-    var inputText = inputTxt.value;
+    var inputText = txtInput.value;
 
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
-    .then(json =>{
+    .then(json => {
         var translatedText = json.constents.translated;
-        outputTxt.innerText=translatedText;
+        outputDiv.innerText=translatedText;
         })
     .catch(errorHandler)
 
